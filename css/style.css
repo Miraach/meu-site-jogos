@@ -1,0 +1,428 @@
+/*ESTILO DA PÁGINA: JOGOS*/
+
+/*FONTES*/
+/*GERAL*/
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Sofadi+One&display=swap');
+
+/*Terror Título*/
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&display=swap');
+
+/*Ação Título*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
+
+/*Aventura Título*/
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+
+/*Plataforma Título*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
+
+/*FPS Título*/
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/*Corrida Título*/
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
+/*RPG Título*/
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+html, body {
+   margin: 0;
+   padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+
+
+/*ESTRUTURA-JOGOS*/
+.estrutura-jogos{
+    display: grid;
+    grid-template-areas: 
+           "terror        terror        terror"
+           ".             div-terror                ."
+
+           "acao-imagem   acao-imagem   acao-imagem"
+           ".             div-acao                  ."
+
+           "aventura-imagem aventura-imagem aventura-imagem"
+           ".             div-aventura              ."
+
+           "plataforma-imagem plataforma-imagem plataforma-imagem"
+           ".             div-plataforma              ."
+
+           "fps-imagem fps-imagem fps-imagem"
+           ".             div-fps              ."
+
+           "corrida-imagem corrida-imagem corrida-imagem"
+           ".             div-corrida             ."
+
+           "rpg-imagem rpg-imagem rpg-imagem"
+           ".             div-rpg           .";
+
+    grid-template-columns: 1fr 2fr 1fr;       
+}
+
+
+/*TERROR*/
+.terror{
+    grid-area: terror;
+}
+.div-terror{
+    grid-area: div-terror;
+}
+.terror-imagem{
+    background-image: url("../imagem/terror.jpg");
+    background-position-y: 170%;
+}
+.hero {
+    background-attachment: fixed;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    position: relative; /*Se eu tirar esse relative daqui, consigo ver o menu em cima da imagem*/
+}
+
+
+/*AÇÃO*/
+.acao-imagem{
+    grid-area: acao-imagem;
+}
+.div-acao{
+    grid-area: div-acao;
+}  
+.acao{
+    background-image: url("../imagem/acao.jpg");
+}
+
+
+
+/*AVENTURA*/
+.aventura-imagem{
+    grid-area: aventura-imagem;
+}
+.div-aventura{
+    grid-area: div-aventura;
+} 
+.aventura{
+    background-image: url("../imagem/aventura.jpg");
+}
+
+
+/*PLATAFORMA*/
+.plataforma-imagem{
+    grid-area: plataforma-imagem;
+}
+.div-plataforma{
+    grid-area: div-plataforma;
+} 
+.plataforma{
+    background-image: url("../imagem/plataforma.jpg");
+}
+
+
+/*FPS*/
+.fps-imagem{
+    grid-area: fps-imagem;
+}
+.div-fps{
+    grid-area: div-fps;
+} 
+.fps{
+    background-image: url("../imagem/fps.jpg");
+}
+
+
+/*CORRIDA*/
+.corrida-imagem{
+    grid-area: corrida-imagem;
+}
+.div-corrida{
+    grid-area: div-corrida;
+} 
+.corrida{
+    background-image: url("../imagem/corrida.jpg");
+}
+
+
+/*RPG*/
+.rpg-imagem{
+    grid-area: rpg-imagem;
+}
+.div-rpg{
+    grid-area: div-rpg;
+} 
+.rpg{
+    background-image: url("../imagem/rpg.jpg");
+}
+
+
+
+
+/*MENU-JOGOS*/
+.menu-jogos ul {
+    list-style-type: none;   
+}
+    
+.menu-jogos li {
+    margin-bottom: 11%;
+}
+    
+.menu-jogos li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+    
+.menu-jogos a:hover {
+    background-color: rgb(206, 185, 203); /*Cor que fica quando vc passa o mouse por cima do botão*/
+    color: rgb(0, 0, 0);                  /*Cor que fica a letra quando vc passa o mouse por cima do botao*/
+}
+    
+.menu-jogos {
+    position: fixed;
+    left: 0;
+    top: 29%;
+}
+    
+.menu-jogos a {
+    background-color: rgb(0, 0, 0); /*Cor do botão*/
+    border-radius: 5px;
+    box-shadow: rgb(175, 153, 153) 4px 3px 4px;
+    transition: .3s;
+    font-family:'Sofadi One', cursive;
+}
+
+
+
+
+.tituloT {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Butcherman', cursive;
+    margin: 0 0 20px 0;
+    color: #696969;
+    text-shadow: 0.4em 0.4em 0.4em #696969;
+ }
+ .paragrafoT {
+    font-family: 'Sofadi One', cursive;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    font-size: 20px;
+    margin: auto;
+    color: #24b9b2;
+    text-shadow: 0.4em 0.4em 0.4em rgb(173, 32, 98);
+ }
+ 
+ 
+ .tituloA {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Bungee Hairline', cursive;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+    text-shadow: 0.4em 0.4em 0.4em rgb(255, 255, 255);
+ }
+ .paragrafoA {
+    font-family: 'Sofadi One', cursive;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    font-size: 20px;
+    margin: auto;
+    color: #24b9b2;
+    text-shadow: 0.4em 0.4em 0.4em rgb(173, 32, 98);
+ }
+ 
+ 
+ .tituloV {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Londrina Shadow', cursive;
+    color: #8418af;
+    letter-spacing: 0.3em;
+    text-shadow: 0.4em 0.4em 0.4em rgb(146, 37, 146);
+ }
+ .paragrafoV {
+    font-family: 'Sofadi One', cursive;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    font-size: 20px;
+    margin: auto;
+    color: #24b9b2;
+    text-shadow: 0.4em 0.4em 0.4em rgb(173, 32, 98);
+ }
+ 
+ 
+ .tituloP {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Lexend Mega', sans-serif;
+    color: #238a2c;
+    text-shadow: 0.4em 0.4em 0.4em rgb(115, 163, 93);
+ }
+ .paragrafoP {
+    font-family: 'Sofadi One', cursive;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    font-size: 20px;
+    margin: auto;
+    color: #24b9b2;
+    text-shadow: 0.4em 0.4em 0.4em rgb(173, 32, 98);
+ }
+ 
+ 
+ .tituloF {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+    color: #1b2688;
+    text-shadow: 0.4em 0.4em 0.4em rgb(69, 93, 201);
+ }
+ .paragrafoF {
+    font-family: 'Sofadi One', cursive;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    font-size: 20px;
+    margin: auto;
+    color: #24b9b2;
+    text-shadow: 0.4em 0.4em 0.4em rgb(173, 32, 98);
+ }
+ 
+ 
+ .tituloC {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Ranchers', cursive;
+    color: #bd2ca9;
+    text-shadow: 0.4em 0.4em 0.4em rgb(150, 44, 118);
+ }
+ .paragrafoC {
+    font-family: 'Sofadi One', cursive;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    font-size: 20px;
+    margin: auto;
+    color: #24b9b2;
+    text-shadow: 0.4em 0.4em 0.4em rgb(173, 32, 98);
+ }
+ 
+ 
+ .tituloR {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Satisfy', cursive;
+    color: #CD2626;
+    text-shadow: 0.4em 0.4em 0.4em #FF6A6A;
+ }
+ .paragrafoR {
+    font-family: 'Sofadi One', cursive;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    font-size: 20px;
+    margin: auto;
+    color: #24b9b2;
+    text-shadow: 0.4em 0.4em 0.4em rgb(173, 32, 98);
+ }
+
+
+.detalhebotao {
+    text-align: center;
+    font-size: 2em;
+ }
+ 
+ .clique {
+    font-size:18px;
+    font-weight: bold;
+    font-family:'Bungee Hairline', cursive;
+    display: inline-block;
+    margin: 1.1em;
+    border: 0;
+    padding: 0.0em 0.1em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: #000000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    border-radius: 0.5em;
+    box-shadow: 2px 3px 0 1px #24b9b2;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+ }
+ 
+ .clique:active {
+    box-shadow: 0 0 0 0 rgb(226, 219, 216), inset 4px 4px 4px rgb(228, 224, 222);
+    transform: translate(6px, 6px);
+ }
+
+ .page-container p:not(:last-of-type) {
+    margin-bottom: 24px;
+}
+
+.page-container {
+    padding: 20px 10px;
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    text-align: left;
+    background-color: rgb(0, 0, 0);  
+ }
+
+ /* **********************************************************************************************
+***********************************   MEDIA QUERIES   ******************************************* 
+********************************************************************************************** */
+
+/* Small Screens ****************************************************************************
+/* max-width 640px *********************************************************************/
+
+@media only screen and (max-width: 40em){
+}   
+
+/* End of small Screens  
+
+/* Medium Screens ***************************************************************************
+/* min-width 641px and max-width 1023px ************************************************/
+
+@media only screen and (min-width: 40.063em) and (max-width: 63.938em) {
+}
+
+/* End of Medium Screens
+   
+     
+/* Large Screens ****************************************************************************
+/* min-width 1024px and max-width 1440px ***********************************************/
+
+@media only screen and (min-width: 64em) and (max-width: 90em) { 
+
+.page-container {
+width: 1024px;
+      
+}
+      
+}
+
+/* End of Large Screens
+  
+/* Extra Large Screens **********************************************************************
+/* min-width 1441px ********************************************************************/
+
+@media only screen and (min-width: 90.063em) {
+      
+.page-container {
+width: 1320px;
+}
+      
+}
+
+/* End of Extra Large Screens

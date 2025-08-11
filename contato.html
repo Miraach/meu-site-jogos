@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTATO</title>
+    
+    <link rel="shortcut icon" href="icones/contato.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/folha.css">
+
+</head>
+<body style="background-size: cover;" background="imagem/alien.jpg">
+
+    <div class="estrutura-contato">
+        <header class="header-contato">
+            <h1 class="nick-contato nick-geral">MIRACH</h1>
+            <nav class="menu-geral contato">
+                <ul>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="javascript:void(0)" onclick="alert('Página em construção :)')">Empresa</a></li>
+                  <li><a href="jogos.html">Jogos</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+                 </ul>
+              </nav>
+        </header>
+
+        <section class="section-contato">
+            <h1 class="titulocontato">↓ Contato ↓</h1>
+            <div id="alinhamento">
+                <p class="pcontato">Av. xxxxxxxxxxxxx, 98</p>
+                <p class="pcontato">São Paulo, SP - xxxxxx-xxx</p><br>
+                <p class="pcontato">Tel: (11) 99994-5701</p>
+                <p class="pcontato">Fax: (11) 99999-9999</p><br>
+                <p class="pcontato">amandhadantas2@gmail.com</p>
+            </div>
+
+            
+                <div id="org">
+                    <div class="rede" id="facebook">
+                    <a href="https://www.facebook.com/"><img class="redesociais" src="icones/facebook.ico"></a> 
+                    </div>
+            
+                    <div class="rede" id="instagram">
+                    <a href="https://www.instagram.com/?hl=pt-br"><img class="redesociais" src="icones/insta.ico"></a>
+                    </div>
+            
+                    <div class="rede" id="youtube">
+                    <a href="https://www.youtube.com/?gl=BR"><img class="redesociais" src="icones/youtu.ico"></a>  
+                    </div>
+            
+                    <div class="rede" id="twitter">
+                    <a href="https://twitter.com/login?lang=pt"><img class="redesociais" src="icones/twitter.ico"></a>  
+                    </div>
+                </div>
+
+        </section>
+
+        <main class="main-contato">
+            
+            <form class="form" method="POST" action=""> 
+                <div class="campo">
+                <input class="put" type="text" name="txtNome" id="txtNome" placeholder="DIGITE SEU NOME"required/>
+                </div>
+                
+                <div class="campo">
+                <input class="put" type="text" name="txtSobrenome" id="txtSobrenome" placeholder="DIGITE SEU SOBRENOME"required/>
+                </div>
+    
+                <div class="campo">
+                <input class="put" type="email" name="txtEmail" id="txtEmail" placeholder="DIGITE SEU E-MAIL"required/>
+                </div>
+    
+                <div class="campo">
+                <textarea class="msg" type="text" name="txtMensagem" id="txtMensagem" placeholder="DIGITE SUA MENSAGEM"></textarea>
+                </div>
+    
+                <div class="botao">
+                <button id="button" type="submit">Enviar</button>
+                </div>
+                </form>         
+        </main>
+    </div>
+  
+    
+
+</body>
+</html>
